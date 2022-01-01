@@ -66,7 +66,7 @@ img {
 }
 
 .container {
-  max-width: 1780px;
+  max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 75px;
@@ -77,7 +77,8 @@ img {
 
 .header__container {
   height: 75px;
-  padding: 15px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header__nav {
@@ -86,5 +87,15 @@ img {
 }
 
 .header__list {
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* Main*/
+
+.main__container {
   display: flex;
 }
