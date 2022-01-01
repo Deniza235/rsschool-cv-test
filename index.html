@@ -26,20 +26,21 @@
     </header>
     <main class="main">
         <div class="main__container container">
-            <article class="short__descr">
-                <section class="photo">
-                    <img src="./assets/img/my_foto.jpeg" alt="Photo" class="contacts__image">
-                </section>
+            <article class="main__short-descr">
+                <h2 class="main__profile">Profile</h2>
+                <div class="main__photo">
+                    <img src="./assets/img/my_foto.jpeg" alt="Photo" class="photo__image">
+                </div>
                 <section id="contacts" class="contacts">
-                    <h2 class="contacts__heading">Contacts</h2>
-                        <ul class="contacts__list">
-                            <li class="contacts__item"><a href="https://t.me/Deniza235" target="_blank">Telegram: @Deniza235</a></li>
-                            <li class="contacts__item"><a href="https://github.com/Deniza235" target="_blank">GitHub: Deniza235</a></li>
-                            <li class="contacts__item"><a href="mailto:lobashova.mariya@mail.ru" target="_blank">Email: lobashova.mariya@mail.ru</a></li>
-                        </ul>
+                    <h3 class="contacts__heading">Contacts</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item"><a href="https://t.me/Deniza235" target="_blank" class="link">Telegram: @Deniza235</a></li>
+                        <li class="contacts__item"><a href="https://github.com/Deniza235" target="_blank" class="link">GitHub: Deniza235</a></li>
+                        <li class="contacts__item"><a href="mailto:lobashova.mariya@mail.ru" target="_blank" class="link">Email: lobashova.mariya@mail.ru</a></li>
+                    </ul>
                 </section>
                 <section id="skills" class="skills">
-                    <h2 class="skills__heading">Skills</h2>
+                    <h3 class="skills__heading">Skills</h3>
                     <ul class="skills__list">
                         <li class="skills__item">HTML, CSS, Basic JS</li>
                         <li class="skills__item">GIT, GitHub, GitLab</li>
@@ -48,15 +49,15 @@
                     </ul>
                 </section>
                 <section id="english" class="english">
-                    <h2 class="english__heading">English level</h2>
+                    <h3 class="english__heading">English level</h3>
                     <p class="english__descr">B1, Intermediate</p>
-                    <span><a href="./assets/docs/EF SET Certificate.pdf" target="_blank">Сертификат EF</a></span>
+                    <span><a href="./assets/docs/EF_SET_Certificate.pdf" target="_blank" class="link" >Сертификат EF</a></span>
                 </section>
             </article>
 
-            <article class="more__descr">
+            <article class="main__more-descr">
+                <h1 class="about__title">Mariya Ivonina</h1>
                 <section id="about" class="about">
-                    <h1 class="about__title">Mariya Ivonina</h1>
                     <p class="about__position">Junior Front-end developer</p>
                     <h2 class="about__heading">About me</h2>
                     <p class="about__description">I'm a beginner Front-end developer. One of my strong skills is perseverance towards understanding this area of IT. I like that I can see the result of my work immediately. It's nice to work with the visual part of the browser. I continue to study, learn new things and apply this in my educational projects.</p>
@@ -78,18 +79,20 @@
                     <p class="code__descr">Favorite movies rating:</p>
                     <pre class="code__text">
                         <code class="code__example">
-                            let rating = ['The Green Mile', 'The Shawshank Redemption', 'Schindler`s List', 'Forrest Gump', 'Harry Potter','The Lord of the Rings'];
-    
-                            console.log('Favorite movies rating:');
-                            for (let i in rating) {
-                                console.log(`#${parseInt(i) + 1} movie: ${rating[i]}`);
-                            }
+                        let rating = ['The Green Mile', 'The Shawshank Redemption', 
+                        'Schindler`s List', 'Forrest Gump', 
+                        'Harry Potter','The Lord of the Rings'];
+
+                        console.log('Favorite movies rating:');
+                        for (let i in rating) {
+                            console.log(`#${parseInt(i) + 1} movie: ${rating[i]}`);
+                        }
                         </code>
                     </pre>
                 </section>
                 <section id="experience" class="experience">
                     <h2 class="experience__heading">Experience</h2>
-                    <p class="experience__descr">My training project: <span class="experience__text">The Lagoona is a site of a hotel that offers a full range of leisure facilities.</span><a href="https://deniza235.github.io/Lagoona/" target="_blank">GitHub Pages</a></p>
+                    <p class="experience__descr">My training project: <span class="experience__text">The Lagoona is a site of a hotel that offers a full range of leisure facilities.</span><a href="https://deniza235.github.io/Lagoona/" target="_blank" class="link">GitHub Pages</a></p>
                 </section>
             </article>
         </div>
@@ -99,7 +102,7 @@
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="https://rs.school/js/" class="footer__logo-link">1</a></li>
-                    <li footer__item><a href="https://github.com/Deniza235" class="footer__github-link">2</a></li>
+                    <li class="footer__item"><a href="https://github.com/Deniza235" class="footer__github-link">2</a></li>
                     <li class="footer__item">2021</li>
                 </ul>
             </nav>
