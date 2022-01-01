@@ -1,4 +1,4 @@
-![foto](./img/foto.jpeg)
+![foto](./assets/img/foto.jpeg)
 # Mariya Ivonina
 
 
