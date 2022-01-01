@@ -9,30 +9,103 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#code">Code example</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#english">English level</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">About me</a></li>
+                    <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+                    <li class="header__item"><a href="#code" class="header__link">Code example</a></li>
+                    <li class="header__item"><a href="#experience" class="header__link">Experience</a></li>
+                    <li class="header__item"><a href="#education" class="header__link">Education</a></li>
+                    <li class="header__item"><a href="#english" class="header__link">English level</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
+    <main class="main">
+        <section class="photo__container">
+            <img src="./assets/img/my_foto.jpeg" alt="Photo" class="photo__image">
+            <h1 class="photo__heading">Mariya Ivonina</h1>
+        </section>
+        <section class="contacts">
+            <div class="contacts__container">
+                <h2 class="contacts__heading">Contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item"><a href="https://t.me/Deniza235" target="_blank">Telegram: @Deniza235</a></li>
+                    <li class="contacts__item"><a href="https://github.com/Deniza235" target="_blank">GitHub: Deniza235</a></li>
+                    <li class="contacts__item"><a href="mailto:lobashova.mariya@mail.ru" target="_blank">Email: lobashova.mariya@mail.ru</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__container">
+                <h2 class="about__heading">About me</h2>
+                <p class="about__description">I'm a beginner Front-end developer. One of my strong skills is perseverance towards understanding this area of IT. I like that I can see the result of my work immediately. It's nice to work with the visual part of the browser. I continue to study, learn new things and apply this in my educational projects.</p>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills__container">
+                <h2 class="skills__heading">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML, CSS, Basic JS</li>
+                    <li class="skills__item">GIT, GitHub, GitLab</li>
+                    <li class="skills__item">VS Code</li>
+                    <li class="skills__item">Figma, Photoshop</li>
+                </ul>
+            </div>
+        </section>
+        <section class="code">
+            <div class="code__container">
+                <h2 class="code__heading">Code example</h2>
+                <p class="code__descr">Favorite movies rating:</p>
+                <pre class="code__text">
+                    <code class="code__example">
+                        let rating = ['The Green Mile', 'The Shawshank Redemption', 'Schindler`s List', 'Forrest Gump', 'Harry Potter','The Lord of the Rings'];
 
+                        console.log('Favorite movies rating:');
+                        for (let i in rating) {
+                            console.log(`#${parseInt(i) + 1} movie: ${rating[i]}`);
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="exeperience__container">
+                <h2 class="experience__heading">Experience</h2>
+                <p class="experience__descr">My training project: <span class="experience__text">The Lagoona is a site of a hotel that offers a full range of leisure facilities.</span><a href="https://deniza235.github.io/Lagoona/" target="_blank">GitHub Pages</a></p>
+            </div>
+        </section>
+        <section class="education">
+            <div class="education__container">
+                <h2 class="education__heading">Education</h2>
+                <h3 class="education__subtitle">Higher education:</h3>
+                    <strong class="education__descr">Lobachevsky State University of Nizhny Novgorod</strong>
+                    <p class="education__text">Specialist's degree <span>Financial management</span></p>
+                <h3 class="education__heading">Online Courses:</h3>
+                <ul class="education__list">
+                    <li class="education__item">Skillbox - Front-end developer profession</li>
+                    <li class="education__item">Code Basics: HTML, CSS, JS</li>
+                    <li class="education__item">Orion Innovation - JS</li>
+                </ul>
+            </div>
+        </section>
+        <section class="english">
+            <div class="english__container">
+                <h2 class="english__heading">English level</h2>
+                <p class="english__descr">B1, Intermediate</p>
+                <span><a href="./assets/docs/EF SET Certificate.pdf" target="_blank">Сертификат EF</a></span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="https://rs.school/js/" class="footer__logo-link">1</a>
+            <a href="https://github.com/Deniza235" class="footer__github-link">2</a>
+            <span class="footer__year">2021</span>
+        </div>
     </footer>
 </body>
 </html>
