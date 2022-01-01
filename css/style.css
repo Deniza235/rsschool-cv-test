@@ -73,21 +73,30 @@ img {
 }
 
 h2, h3 {
-  font-size: 30px;
-  line-height: 2;
-  font-weight: 700;
   color: #A64E6C;
 }
 
 .container {
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 75px;
   padding-right: 75px;
 }
 
 .link {
+  color: #8F8B8C;
+}
+
+.link:hover {
+  color: #7C3B53;
+}
+
+.link:focus {
+  border-bottom: 1px solid #7C3B53;
+  color: #7C3B53;
+}
+
+.link:active {
   color: #8F8B8C;
 }
 
@@ -108,8 +117,6 @@ h2, h3 {
   list-style: none;
 }
 
-
-
 .header__item:not(:last-child) {
   margin-right: 15px;
 }
@@ -119,6 +126,19 @@ h2, h3 {
   line-height: 2;
   font-weight: 600;
   color: #FFF4F8;
+}
+
+.header__link:hover {
+  color: #7C3B53;
+}
+
+.header__link:focus {
+  border-bottom: 1px solid #7C3B53;
+  color: #7C3B53;
+}
+
+.header__link:active {
+  color: #8F8B8C;
 }
 
 /* Main*/
@@ -150,17 +170,38 @@ h2, h3 {
 
 /*Contacts*/
 
-.contacts__item {
+.contacts {
+  padding-left: 25px;
+}
+
+.contacts__item, 
+.skills__item {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 500;
   color: #8F8B8C;
 }
 
+/*Skills*/
+
+.skills {
+  padding-left: 25px;
+}
+
+
+
+/*English*/
+
+.english__heading {
+  padding-left: 25px;
+}
 
 /*About*/
 
 .about__title {
   margin: 0 auto;
   padding-top: 100px;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 2;
   font-weight: 700;
   color: #7C3B53;
@@ -168,22 +209,63 @@ h2, h3 {
 
 .about__position {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 38px;
   line-height: 2;
   color: #8F8B8C;
   font-weight: 700;
 }
 
+/*Education*/
+
+.education__list {
+  padding-left: 27px;
+}
+
+.education__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.education__subtitle {
+  margin-top: 0;
+}
+
+.education__descr {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/*Code*/
+
+.code__text {
+  background-color: #FFF7FA;
+}
+
+/*Experience*/
+
+.experience__text {
+  display: block;
+}
 
 /*Footer*/
 
 .footer__container {
-  height: 100px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  height: 200px;
   background: linear-gradient(#FFF0F5, 69%, #BFB7BA);
 }
+
 
 .footer__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;  
   list-style: none;
+}
+
+.footer__item {
+  font-weight: 700;
+  color: #A64E6C;
 }
